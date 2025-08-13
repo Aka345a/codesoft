@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #fc5c7d, #6a82fb);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: #fff;
+      color: #fc5c7d;
+      padding: 12px 30px;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #ffd6e5;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .feature-box {
+      width: 300px;
+      margin: 15px;
+      padding: 25px;
+      background-color: #f0f4ff;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-box h3 {
+      color: #4a4a4a;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .about {
+      background: #fafafa;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffdd57;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GlowLanding</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1>Welcome to GlowLanding</h1>
+    <p>Experience a clean, elegant, and modern landing page built with love.</p>
+    <button onclick="alert('Welcome aboard!')">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-box">
+      <h3>Speed Optimized</h3>
+      <p>Designed to load instantly and provide smooth navigation.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Fully Responsive</h3>
+      <p>Looks amazing on phones, tablets, and large desktops.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Creative Layout</h3>
+      <p>Crafted with beautiful colors, padding, and alignment in mind.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why Choose This Page?</h2>
+    <p>This landing page is perfect for beginners who want to learn how to structure, design, and polish a website using just HTML and CSS. It’s easy to customize and beautiful enough to show off your skills.</p>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 GlowLanding. Designed with 💜 by Aakanksha.</p>
+    <p>
+      <a href="#">Privacy</a> |
+      <a href="#">Terms</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
